@@ -1,26 +1,17 @@
 About
 =====
 
-This is the base KERN docker image.
-
-KERN is the radio astronomical software suite. Read more about KERN
-at http://kernsuite.info
+This is the base cppdev docker image (forked from [kernsuite-docker/base](https://github.com/kernsuite-docker/base)).
 
 This Docker image is:
-* Based on Ubuntu 18.04
-* Has the KERN version 4 launchpad PPA enabled
+* Based on Ubuntu 18.10
+* Has few cpp libraries needed for other projects.
 * Has Universe, Multiverse and Restricted repo's enabled
 * Has a docker-apt-install script which can be used
   to install debian package while keeping the Docker image
   clean and tiny.
 
 You can manually build this image with `make build `or download it
-from the docker hub with the name radioastro/base:
+from the docker hub with the name uclrits/cppdev:
 
-usage: `$ docker run kernsuite/base <cmd>`
-
-**note**: you can use this image as a base for your custom image. Just
-put `FROM: kernsuite/base:3` as the first line in your `Dockerfile`.
-
-https://registry.hub.docker.com/u/kernsuite/base/
-
+usage: `$ docker run uclrits/base <cmd>`
