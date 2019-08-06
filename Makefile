@@ -1,4 +1,4 @@
-DOCKER_REPO=kernsuite/base:4
+DOCKER_REPO=uclrits/cppdev:16.04
 
 .PHONY: build clean
 
