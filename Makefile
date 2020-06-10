@@ -1,4 +1,4 @@
-DOCKER_REPO=uclrits/cppdev:16.04
+DOCKER_REPO=uclrits/bempp:20.04all
 
 .PHONY: build clean
 
